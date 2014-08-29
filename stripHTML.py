@@ -1,3 +1,5 @@
+### http://stackoverflow.com/questions/753052/strip-html-from-strings-in-python ###
+
 from HTMLParser import HTMLParser
 
 class MLStripper(HTMLParser):
@@ -9,7 +11,7 @@ class MLStripper(HTMLParser):
     def get_data(self):
         return ''.join(self.fed)
 
-def strip_HTML(string_with_HTML):
+def strip_tags(html):
     s = MLStripper()
-    s.feed(string_with_HTML)
+    s.feed(html)
     return s.get_data()
