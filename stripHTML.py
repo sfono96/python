@@ -1,4 +1,4 @@
-### http://stackoverflow.com/questions/753052/strip-html-from-strings-in-python ###
+    ### http://stackoverflow.com/questions/753052/strip-html-from-strings-in-python ###
 
 from HTMLParser import HTMLParser
 
